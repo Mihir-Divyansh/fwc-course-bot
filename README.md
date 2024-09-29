@@ -155,8 +155,6 @@ The bot organizes roles in a hierarchical structure, where the topmost role is `
 ---
 
 ### The SQLight side of things
-For details about SQL Manager, look at [The Documentation](/docs/SQL.md)
-
 
 The bot uses SQLite to store persistent data. SQL operations are handled by the `src/sql_wrapper.py` module. To initialize the database, run the `initDB.py` script, which sets up the required schema.
 
