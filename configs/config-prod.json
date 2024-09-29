@@ -1,0 +1,67 @@
+{
+    "sql-database":"prod/database.db",
+    "registrations-database":"ext/ext_db.csv",
+    "roles":{
+        "GVV Sharma":{
+            "name":"GVV Sharma",
+            "cat-name" : "gvv",
+            "id":0,
+            "dm-channels":true,
+            "child-roles":[ "PM", "TA" ]
+        },
+        "TA":{
+            "name":"TA",
+            "cat-name" : "ta",
+            "id":1,
+            "dm-channels":true,
+            "child-roles":[ "Module - Student" ]
+        },
+        "PM":{
+            "name":"PM",
+            "cat-name" : "pm",
+            "id":2,
+            "dm-channels":true,
+            "child-roles":[ "Project - Student" ]
+        },
+        "Project - Student":{
+            "name":"Project - Student",
+            "cat-name" : "student",
+            "id":3,
+            "dm-channels":true,
+            "child-roles":null
+        },
+        "Module - Student":{
+            "name":"Module - Student",
+            "cat-name" : "student",
+            "id":4,
+            "dm-channels":true,
+            "child-roles":null
+        },
+        "Maintainer":{
+            "name" : "Maintainer",
+            "id" : 5,
+            "dm-channels": false,
+            "child-roles":null
+        },
+        "Course Manager":{
+            "name" : "Course Manager",
+            "id" : 6,
+            "dm-channels": false,
+            "child-roles": null
+        }
+    },
+    "mainTableColumns":["name TEXT, rollno TEXT, discord INT, roleID INT, groupManager TEXT"],
+    "roleQueueColumns":["id INTEGER PRIMARY KEY, rollno, datatype, value TEXT, data SJSON, time REAL, status INT, isunique INT, UNIQUE(value, isunique)"],
+
+    "rollno": {
+        "regex":"fwc-\\d\\d\\d\\d\\d$",
+        "syntax":"fwc-xxxxx"
+    },
+
+    "addons":{
+        "gsheet":{
+            "key-file":"configs/placeholder.json",
+            "addon-config":"configs/gsheet-config.json"
+        }
+    }
+}

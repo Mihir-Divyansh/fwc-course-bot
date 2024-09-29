@@ -1,0 +1,10 @@
+# Put all scripts in a scripts folder
+configs/base-config.json
+scripts/
+logs/
+.discord/
+test.py
+__pycache__/
+ext/ext_db.csv
+prod/
+.fwc/

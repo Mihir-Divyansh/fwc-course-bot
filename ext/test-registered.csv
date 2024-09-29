@@ -1,0 +1,10 @@
+roll-no,name,discord-role-name,group-manager-rollno
+fwc-00000, head name, top_role, fwc-00000
+fwc-00001, manager1 name, childA, fwc-00000
+fwc-00002, first1 name, childchildA, fwc-00001
+fwc-00003, first2 name, childchildA, fwc-00001
+fwc-00004, first3 name, childchildA, fwc-00001
+fwc-00005, manager2 name, childB, fwc-00000
+fwc-00006, second1 name, childchildB, fwc-00005
+fwc-00007, second2 name, childchildB, fwc-00005
+fwc-00008, second3 name, childchildB, fwc-00005
